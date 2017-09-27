@@ -64,3 +64,13 @@ The original MINGW looks like this:
 ```
 PS1='\[\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$'
 ```
+
+Also do this to not show user + host in the terminal that VSCode uses.
+
+The executable is different from the _regular_ Git Bash executable:
+
+The _regular_ git bash is started at `C:\Program Files\Git\git-bash.exe`.
+
+Whereas VSCodes terminal is started with `C:\Program Files\Git\bin\bash.exe`.
+
+You'll need to configure `C:\Program Files\Git\etc\profile.d\git-prompt.sh` and put the user + host stuff in comments or whatever.
