@@ -54,3 +54,13 @@ Pick the display that doesn't show your alt-tab screen.
 ## Stuff to pay attention to while streaming
 Don't share company info, or development desktop related info. e.g. using a terminal might show who's logged in.
 
+## Fixing your bash to not show user & host
+In a .bash_profile:
+```
+PS1='\[\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\007\]\n\[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$'
+```
+
+The original MINGW looks like this:
+```
+PS1='\[\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$'
+```
