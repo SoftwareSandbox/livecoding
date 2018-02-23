@@ -15,7 +15,7 @@ Base Resolution: _Use Current (1920x1080)_
 
 FPS: _30_
 
-Stream Key: Click _Show Key_ on [this url](https://www.twitch.tv/cgk_livecoding/dashboard/settings/streamkey).
+Stream Key: Click _Show Key_ on Twitch, the url should look like https://www.twitch.tv/<your twitch username>/dashboard/settings/streamkey
 
 Advanced: _Enable Stream Delay_ of _20s_ so you can still shut down the stream on time when you realized you've done something stupid (like shown a password e.g.).
 Configure this to how fast you think you realize your own mistakes. :D
